@@ -36,9 +36,6 @@ const App = () => {
 
           <Route element={<AuthRouteProtechtion />}>
             <Route path={RouteProfile} element={<Profile />} />
-            <Route path={RouteBlogAdd} element={<AddBlog />} />
-            <Route path={RouteBlog} element={<BlogDetails />} />
-            <Route path={RouteBlogEdit()} element={<EditBlog />} />
             <Route path={RouteCommentDetails} element={<Comments />} />
           </Route>
 
@@ -48,6 +45,9 @@ const App = () => {
             <Route path={RouteCategoryDetails} element={<CategoryDetails />} />
             <Route path={RouteEditCategory()} element={<EditCategory />} />
             <Route path={RouteUser} element={<User />} />
+            <Route path={RouteBlogAdd} element={<AddBlog />} />
+            <Route path={RouteBlog} element={<BlogDetails />} />
+            <Route path={RouteBlogEdit()} element={<EditBlog />} />
           </Route>
 
         </Route>

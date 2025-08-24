@@ -53,7 +53,7 @@ const SignUp = () => {
     }
 
     return (
-        <div className='flex justify-center items-center h-screen w-screen'>
+        <div className='flex justify-center items-center h-screen w-screen px-2'>
             <Card className="w-[400px] p-5">
                 <h1 className='text-2xl font-bold text-center mb-5'>Create Your Account</h1>
                 <div className=''>

@@ -81,7 +81,7 @@
   * {
     @apply border-border;
   }
-
+ 
   body {
     @apply bg-background text-foreground;
   }
@@ -90,6 +90,7 @@
 
 body {
   font-family: "Nunito", serif;
+  background-color: #FFFFE5;
 }
 
 

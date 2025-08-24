@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from '@/assets/images/logo-white.png'
+import logo from '@/assets/images/my_logo.jpeg'
 import { Button } from './ui/button'
 import { Link, useNavigate } from 'react-router-dom'
 import { MdLogin } from "react-icons/md";
@@ -59,17 +59,18 @@ const Topbar = () => {
     }
 
     return (
-        <div className='flex justify-between items-center h-16 fixed w-full z-20 bg-white px-5 border-b'>
+        <div className='flex justify-between items-center h-16 fixed w-full z-20  px-5 border-b backdrop-blur-md'>
             <div className='flex justify-center items-center gap-2'>
                 <button onClick={toggleSidebar} className='md:hidden' type='button'>
                     <AiOutlineMenu />
                 </button>
                 <Link to={RouteIndex}>
-                    <img src={logo} className='md:w-auto w-48' />
+                    <img src={logo} className='w-12 h-12 rounded-full cursor-pointer' />
                 </Link>
+                <h1> <span className="text-blue-300 font-bold">PK</span> Blog</h1>
             </div>
             <div className='w-[500px]'>
-                <div className={`md:relative md:block absolute bg-white left-0 w-full md:top-0 top-16 md:p-0 p-5 ${showSearch ? 'block' : 'hidden'}`}>
+                <div className={`md:relative md:block absolute  left-0 w-full md:top-0 top-16 md:p-0 p-5 ${showSearch ? 'block' : 'hidden'}`}>
                     <SearchBox />
                 </div>
             </div>
@@ -106,12 +107,12 @@ const Topbar = () => {
                                     Profile
                                 </Link>
                             </DropdownMenuItem>
-                            <DropdownMenuItem asChild className="cursor-pointer">
+                            {/* <DropdownMenuItem asChild className="cursor-pointer">
                                 <Link to={RouteBlogAdd}>
                                     <FaPlus />
                                     Create Blog
                                 </Link>
-                            </DropdownMenuItem>
+                            </DropdownMenuItem> */}
 
                             <DropdownMenuSeparator />
 
